@@ -13,8 +13,8 @@ the user we are given is in the sudoers file, but he cannot execute most of the 
 
 ###### Description
 >We've got a binary that can list directories as root, try it out !!
-
 Additional details will be available after launching your challenge instance.
+
 it's a binary that executes ls + the content of an environment variable without sanitizing it so you can just put your payload as is in the environment variable :
 
 ```sh
