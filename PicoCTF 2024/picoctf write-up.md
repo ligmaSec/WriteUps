@@ -26,7 +26,7 @@ which looks familiar, since JPEG's magic bytes look like this : \
 ``
 \
 We can see that the bytes are indeed swapped, but instead of 2 bytes being inverted, it's four. 
-so ``dd if=challengefile of=output_file conv=swab`` __won't__ help us here, so I wrote a script that inverts 4 bytes instead :
+so ``dd if=challengefile of=output_file conv=swab`` __won't__ help us here, so I wrote a script that inverts 4 bytes by 4 bytes instead :
 
 ```python
 with open('challengefile', 'rb') as f:
