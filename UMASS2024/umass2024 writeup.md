@@ -248,15 +248,15 @@ public class MainActivity extends androidx.appcompat.app.e implements View.OnCli
                 sb.append(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0"));
                 MainActivity mainActivity2 = MainActivity.this;
                 sb.append(mainActivity2.b64_spongebob_encode(mainActivity2.build_model));
-                mainActivity.socket_if_year_above_46597(sb.toString());
+                mainActivity.socket_if_year_above_2023(sb.toString());
                 MainActivity mainActivity3 = MainActivity.this;
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0"));
                 MainActivity mainActivity4 = MainActivity.this;
                 sb2.append(mainActivity4.b64_spongebob_encode(mainActivity4.get_wifi_macaddress()));
-                mainActivity3.socket_if_year_above_46597(sb2.toString());
+                mainActivity3.socket_if_year_above_2023(sb2.toString());
                 MainActivity mainActivity5 = MainActivity.this;
-                mainActivity5.socket_if_year_above_46597(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0") + "AzE9Omd0eG8XHhEcHTx1Nz0dN2MjfzF2MDYdICE6fyMa");
+                mainActivity5.socket_if_year_above_2023(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0") + "AzE9Omd0eG8XHhEcHTx1Nz0dN2MjfzF2MDYdICE6fyMa");
                 return "";
             } catch (Exception e8) {
                 e8.printStackTrace();
@@ -318,7 +318,7 @@ public class MainActivity extends androidx.appcompat.app.e implements View.OnCli
     }
 
     /* renamed from: Q0 */
-    public void socket_if_year_above_46597(String str) {
+    public void socket_if_year_above_2023(String str) {
         Instant instant;
         ZoneId systemDefault;
         ZonedDateTime atZone;
@@ -467,15 +467,15 @@ public String doInBackground(Void... voidArr) {
                 sb.append(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0"));
                 MainActivity mainActivity2 = MainActivity.this;
                 sb.append(mainActivity2.b64_spongebob_encode(mainActivity2.build_model));
-                mainActivity.socket_if_year_above_46597(sb.toString());
+                mainActivity.socket_if_year_above_2023(sb.toString());
                 MainActivity mainActivity3 = MainActivity.this;
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0"));
                 MainActivity mainActivity4 = MainActivity.this;
                 sb2.append(mainActivity4.b64_spongebob_encode(mainActivity4.get_wifi_macaddress()));
-                mainActivity3.socket_if_year_above_46597(sb2.toString());
+                mainActivity3.socket_if_year_above_2023(sb2.toString());
                 MainActivity mainActivity5 = MainActivity.this;
-                mainActivity5.socket_if_year_above_46597(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0") + "AzE9Omd0eG8XHhEcHTx1Nz0dN2MjfzF2MDYdICE6fyMa");
+                mainActivity5.socket_if_year_above_2023(MainActivity.b64decode("aHR0cDovLzEyNy4wLjAuMToxMjU0") + "AzE9Omd0eG8XHhEcHTx1Nz0dN2MjfzF2MDYdICE6fyMa");
                 return "";
             } catch (Exception e8) {
                 e8.printStackTrace();
@@ -485,7 +485,7 @@ public String doInBackground(Void... voidArr) {
 ```
 
 
-notice the last `socket_if_year_above_46597()` function call, if you take the second part of the base64 string and (by guessing a bit) apply the `b64_spongebob_encode()` function on it, you get ... the first part of the flag ! 
+notice the last `socket_if_year_above_2023()` function call, if you take the second part of the base64 string and (by guessing a bit) apply the `b64_spongebob_encode()` function on it, you get ... the first part of the flag ! 
 
 https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'UTF8','string':'SPONGEBOBSPONGEBOBSPONGEBOBSPONGEBOBSPONGEBOB'%7D,'Standard',false)&input=QXpFOU9tZDBlRzhYSGhFY0hUeDFOejBkTjJNamZ6RjJNRFlkSUNFNmZ5TWE
 
