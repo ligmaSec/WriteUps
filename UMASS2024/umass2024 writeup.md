@@ -436,7 +436,9 @@ public class MainActivity extends androidx.appcompat.app.e implements View.OnCli
         super.onCreate(bundle);
         setContentView(R.layout.activity_main);
     }
-}```
+}
+```
+
 
 
 We can see that there's a bunch of anti-debug and anti-emulator functions preventing us from clicking on the order buttons, but since I am using an androidx86 VM instead of an emulator, I am not affected by these. (you could use frida hooks to prevent anti-debugging techniques : https://codeshare.frida.re/@meerkati/universal-android-debugging-bypass/)
@@ -481,6 +483,7 @@ public String doInBackground(Void... voidArr) {
             }
         }
 ```
+
 
 notice the last `socket_if_year_above_46597()` function call, if you take the second part of the base64 string and (by guessing a bit) apply the `b64_spongebob_encode()` function on it, you get ... the first part of the flag ! 
 
