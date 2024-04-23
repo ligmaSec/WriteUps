@@ -5,7 +5,8 @@ Sorry for my bed england
 
 ### Description:
 ```
-Mr. Krabs has decided to make a new food delivery app for the Krusty Krab but Plankton decided to make his own patched version. Loyal Krusty Krab customers are saying weird network traffic and shell commands are coming from the app! Can you figure out what's going on?```
+Mr. Krabs has decided to make a new food delivery app for the Krusty Krab but Plankton decided to make his own patched version. Loyal Krusty Krab customers are saying weird network traffic and shell commands are coming from the app! Can you figure out what's going on?
+```
 
 ### Solution:
 
@@ -211,7 +212,8 @@ public class MainActivity extends androidx.appcompat.app.e implements View.OnCli
         super.onCreate(bundle);
         setContentView(R.layout.activity_main);
     }
-}```
+}
+```
 
 the code is a pain to read, so let's figure out what each function does and rename them accordingly
 
